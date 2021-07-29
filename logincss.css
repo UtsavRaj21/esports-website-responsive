@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Play', sans-serif;
     overflow-x: hidden;
 }
 .navbar{
@@ -11,6 +11,7 @@
 
 .navbar-nav{
     padding-left: 8vw;
+    margin-left: 23vw;
 }
 
 .esports{
@@ -18,10 +19,10 @@
 }
 
 .navfont{
-    font-size: larger;
+    font-size: medium;
     color: white;
     margin-left: 1.5vw;
-    border: none;
+    text-decoration: none;
 }
 .navfont:hover{
     color: blue;
@@ -33,11 +34,11 @@
 }
 .btn-sub{
     height: 5vh;
+    width: 8vw;
 }
 .signup{
     margin-right: 5vw;
-    margin-left: 2vw;
-    background-color: blue;
+    font-size: small;
     border-radius: 50px;
 }
 
@@ -47,6 +48,11 @@
 .login{
     border-radius: 50px;
     border: none;
+    margin-left: 7%;
+    font-size: small;
+}
+.login:hover,.signup:hover{
+    background-color: blue;
 }
 .backgroundimg{
     position: relative;
@@ -60,11 +66,18 @@
     position: absolute;
     top: 20vh;
     left:32vw;
-    background-color: #360B46;
-    opacity: 0.9;
+    background: linear-gradient(0deg, rgba(30,11,66,1) 0%, rgba(0,0,0,0) 100%);
+    border: 2px solid #BD00FF;
 }
 .sign{
     margin-top: 3%;
+}
+
+.sign{
+    font-size: 18px;
+}
+.signdown{
+    font-size: 14px;
 }
 .sign,.signdown{
     height: 10%;
@@ -73,7 +86,6 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: larger;
     
 }
 .social-media{
@@ -116,7 +128,7 @@
     margin-left: 10%;
     margin-bottom: 5%;
     padding-left: 1.5vw;
-    font-size: x-large;
+    font-size: large;
     padding-top: 1%;
     overflow-y:inherit;
 }
@@ -135,15 +147,16 @@
 .check-side {
     color: white;
     margin-left: 5%;
-    font-size:larger;
+    font-size:medium;
     display: flex;
     align-items: center;
 }
 
 .loginBtn{
-    margin-left: 10%;
-    height: 10%;
-    width: 80%;
+    margin-top: 5vh;
+    margin-left: 20%;
+    height: 8%;
+    width: 60%;
     background-color:#0094FF ;
     border-radius:50px ;
     display: flex;
@@ -158,7 +171,7 @@
 }
 ::placeholder {
     color: #a5a2a2;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 2%;
   }
 
@@ -170,8 +183,7 @@
             position: absolute;
             top: 15vh;
             left:10vw;
-            background-color: #360B46;
-            opacity: 1;
+            
         }
 }
 
@@ -182,8 +194,7 @@
         position: absolute;
         top: 10vh;
         left:0vw;
-        background-color: #360B46;
-        opacity: 1;
+        
     }
     .navbar{
         padding-top: 1vh;
@@ -191,5 +202,17 @@
     .check-side {
         font-size: large;
     }
+    .navbar-nav{
+        margin-left: 0vw;
+    }
+
+    .btn{
+        width: 30vw;
+    }
+
+    .login{
+        margin-left: 0vw;
+    }
+
 }
 

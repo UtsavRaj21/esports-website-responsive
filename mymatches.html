@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mymatches.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand esports " href="#">Esports</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a class=" navfont" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navfont" href="#tournament">TOURNAMENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navfont" href="#team">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navfont" href="#player">PLAYERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navfont" href="#Stream">STREAM</a>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn  text-light login btn-sub" type="submit">
+                        <img class="linkimg" src="img/login 1.png" width="20">LOGIN</button>
+                    <button class="btn  text-light signup btn-sub" type="submit">
+                        <img class="linkimg" src="img/add-user 1.png" width="20">SIGN UP</button>
+                </div>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <img class="baseimg " src="./img/BaseiMG.png">
+    <div class=" baseContent">
+        <div class="row Plyde">
+            <div class="baseContentPicinfo  col-md-4 ">
+                <div class="baseContentPic ">
+                    <img class="" src="img/user (1) 1.png" height="70">
+                </div>
+                <div class="baseContentinfo">
+                    <div class="baseContentCustomise">CUSTOMIZE</div>
+                </div>
+            </div>
+
+            <div class="baseContentProfile  col-md-8 ">
+                <div class="baseContentProfileName">Profile Name</div>
+                <div class="baseContentProfileinfo">
+                    <div class="levelmin">Level 1</div>
+                    <div class="levelmid"> COMPETE TO EARN MORE XP</div>
+                    <div class="levelmax me-auto">Level 2</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 1%" aria-valuenow="20" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="XP"> 0/5000XP </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="mid1">
+        <ul class="nav  mid1-option">
+            <li class="active "><a class="option" data-toggle="tab" onclick="openCity(event, 'Matches')" href="#home">My Matches</a></li>
+            <li><a class="option" data-toggle="tab" onclick="openCity(event, 'Results')">Results</a></li>
+            <li><a class="option" data-toggle="tab" onclick="openCity(event, 'Reward')">Reward</a></li>
+            <li><a class="option" data-toggle="tab" onclick="openCity(event, 'Transaction')">Transaction</a></li>
+            <li><a class="option" data-toggle="tab" onclick="openCity(event, 'Share')">Share</a></li>
+            <li><a class="option" data-toggle="tab" onclick="openCity(event, 'Notifications')">Notifications</a></li>
+        </ul>
+        <div class="hr-div">
+            <hr class="hr">
+        </div>
+       
+        <div id="Matches" class="tabcontent container">
+            <div class="row const slide1">
+                <div class="slide1-icon col-md-4">
+                    <img src="img/battle 1.png">
+                </div>
+                <div class="slide-content col-md-8">
+                    <div class="slide-content1">
+                        You haven't joined any tournaments yet!
+                    </div>
+                    <div class="slide-content2">
+                        Find something to Compete in our tournament page
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Results" class="tabcontent container">
+            <div class="row const slide2">
+                <div class="slide2-bar ">
+                    <div class="slide2-bar1 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/vs 1.png">
+                        </div>
+                        <div class="slide2-bar-vs down2">vs/vs</div>
+                    </div>
+                    <div class="slide2-bar2 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/flag (1) 1.png">
+                        </div>
+                        <div class="slide2-bar-tour down2">Tournament</div>
+                    </div>
+                    <div class="slide2-bar3 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/console (1) 1.png">
+                        </div>
+                        <div class="slide2-bar-game down2">Game</div>
+                    </div>
+                    <div class="slide2-bar4 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/medal 2.png">
+                        </div>
+                        <div class="slide2-bar-your down2">Your Rewards</div>
+                    </div>
+                    <div class="slide2-bar5 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/trophy (2) 1.png">
+                        </div>
+                        <div class="slide2-bar-winner down2">WINNER</div>
+                    </div>
+                    <div class="slide2-bar6 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/calendar 1.png">
+                        </div>
+                        <div class="slide2-bar-date down2">DATE</div>
+                    </div>
+                </div>
+
+                <div class="game-box">
+                    <div class="game-box-img">
+                        <img src="img/hooded-man-mascot-sports-esports-logo-isolated-dark-background_235528-25 1.png"
+                            height="50">
+                    </div>
+                    <div class="game-box-vs">vs</div>
+                    <div class="game-box-img">
+                        <img src="img/854250dcbb36afb1ae5f7a33c83a8629 1.png" height="50">
+                    </div>
+                    <div class="game-box-detail">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game">COD</div>
+                    <div class="game-box-score"> 75XP</div>
+                    <div class="game-box-winner">
+                        <img src="img/854250dcbb36afb1ae5f7a33c83a8629 1.png" height="50">
+                    </div>
+                    <div class="game-box-date">24/07/2021</div>
+                </div>
+
+                <div class="game-box">
+                    <div class="game-box-img">
+                        <img src="img/hooded-man-mascot-sports-esports-logo-isolated-dark-background_235528-25 1.png"
+                            height="50">
+                    </div>
+                    <div class="game-box-vs">vs</div>
+                    <div class="game-box-img">
+                        <img src="img/854250dcbb36afb1ae5f7a33c83a8629 1.png" height="50">
+                    </div>
+                    <div class="game-box-detail">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game">COD</div>
+                    <div class="game-box-score"> 75XP</div>
+                    <div class="game-box-winner">
+                        <img src="img/854250dcbb36afb1ae5f7a33c83a8629 1.png" height="50">
+                    </div>
+                    <div class="game-box-date">24/07/2021</div>
+                </div>
+
+                <div class="game-box">
+                    <div class="game-box-img">
+                        <img src="img/hooded-man-mascot-sports-esports-logo-isolated-dark-background_235528-25 1.png"
+                            height="50">
+                    </div>
+                    <div class="game-box-vs">vs</div>
+                    <div class="game-box-img">
+                        <img src="img/854250dcbb36afb1ae5f7a33c83a8629 1.png" height="50">
+                    </div>
+                    <div class="game-box-detail">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game">COD</div>
+                    <div class="game-box-score"> 75XP</div>
+                    <div class="game-box-winner">
+                        <img src="img/854250dcbb36afb1ae5f7a33c83a8629 1.png" height="50">
+                    </div>
+                    <div class="game-box-date">24/07/2021</div>
+                </div>
+
+                <div class="game-box">
+                    <div class="game-box-img">
+                        <img src="img/hooded-man-mascot-sports-esports-logo-isolated-dark-background_235528-25 1.png"
+                            height="50">
+                    </div>
+                    <div class="game-box-vs">vs</div>
+                    <div class="game-box-img">
+                        <img src="img/854250dcbb36afb1ae5f7a33c83a8629 1.png" height="50">
+                    </div>
+                    <div class="game-box-detail">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game">COD</div>
+                    <div class="game-box-score"> 75XP</div>
+                    <div class="game-box-winner">
+                        <img src="img/854250dcbb36afb1ae5f7a33c83a8629 1.png" height="50">
+                    </div>
+                    <div class="game-box-date">24/07/2021</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="Reward" class=" tabcontent container">
+            <div class=" row const slide">
+                <div class="slide2-bar ">
+                    <div class="slide2-bar2 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/flag (1) 1.png">
+                        </div>
+                        <div class="slide2-bar-tour down2">Tournament</div>
+                    </div>
+                    <div class="slide2-bar3 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/console (1) 1.png">
+                        </div>
+                        <div class="slide2-bar-game down2">Game</div>
+                    </div>
+                    <div class="slide2-bar4 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/medal 2.png">
+                        </div>
+                        <div class="slide2-bar-your down2">Your Rewards</div>
+                    </div>
+                    <div class="slide2-bar6 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/calendar 1.png">
+                        </div>
+                        <div class="slide2-bar-date down2">DATE</div>
+                    </div>
+                </div>
+
+                <div class="game-box-3">
+
+                    <div class="game-box-detail slide-3-name">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game slide3-cod">COD</div>
+
+                    <div class="game-box-winner slide-3-reward">
+                        <img src="img/medal 2.png" height="30" />
+                        <div class="slide-3-amount">100XP</div>
+                    </div>
+                    <div class="game-box-date slide-3-date">24/07/2021</div>
+                </div>
+
+                <div class="game-box-3">
+
+                    <div class="game-box-detail slide-3-name">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game slide3-cod">COD</div>
+
+                    <div class="game-box-winner slide-3-reward">
+                        <img src="img/medal 2.png" height="30" />
+                        <div class="slide-3-amount">100XP</div>
+                    </div>
+                    <div class="game-box-date slide-3-date">24/07/2021</div>
+                </div>
+
+                <div class="game-box-3">
+
+                    <div class="game-box-detail slide-3-name">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game slide3-cod">COD</div>
+
+                    <div class="game-box-winner slide-3-reward">
+                        <img src="img/medal 2.png" height="30" />
+                        <div class="slide-3-amount">100XP</div>
+                    </div>
+                    <div class="game-box-date slide-3-date">24/07/2021</div>
+                </div>
+
+                <div class="game-box-3">
+
+                    <div class="game-box-detail slide-3-name">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game slide3-cod">COD</div>
+
+                    <div class="game-box-winner slide-3-reward">
+                        <img src="img/medal 2.png" height="30" />
+                        <div class="slide-3-amount">100XP</div>
+                    </div>
+                    <div class="game-box-date slide-3-date">24/07/2021</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Transaction" class="tabcontent container">
+            <div class="row const slide2">
+                <div class="slide2-bar ">
+                    <div class="slide2-bar1 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/console (1) 1.png">
+                        </div>
+                        <div class="slide2-bar-vs down2">game</div>
+                    </div>
+                    <div class="slide2-bar2 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/flag (1) 1.png">
+                        </div>
+                        <div class="slide2-bar-tour down2">Tournament</div>
+                    </div>
+                    <div class="slide2-bar3 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/pin-number 1.png">
+                        </div>
+                        <div class="slide2-bar-game down2">TXIN ID</div>
+                    </div>
+                    <div class="slide2-bar4 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/dollar 1.png">
+                        </div>
+                        <div class="slide2-bar-your down2">AMOUNT</div>
+                    </div>
+                    <div class="slide2-bar5 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/search 1.png">
+                        </div>
+                        <div class="slide2-bar-winner down2">STATUS</div>
+                    </div>
+                    <div class="slide2-bar6 up2 ">
+                        <div class="slide2-bar-img">
+                            <img src="img/calendar 1.png">
+                        </div>
+                        <div class="slide2-bar-date down2">DATE</div>
+                    </div>
+                </div>
+
+                <div class="game-box-4">
+
+                    <div class="game-box-COD">COD</div>
+
+                    <div class="game-box-detail slide-4-friend">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game">xxx</div>
+                    <div class="game-box-score"> $ 200</div>
+                    <div class="game-box-winner">
+                        success
+                    </div>
+                    <div class="game-box-date">24/07/2021</div>
+                </div>
+                <div class="game-box-4">
+
+                    <div class="game-box-COD">COD</div>
+
+                    <div class="game-box-detail slide-4-friend">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game">xxx</div>
+                    <div class="game-box-score"> $ 200</div>
+                    <div class="game-box-winner">
+                        success
+                    </div>
+                    <div class="game-box-date">24/07/2021</div>
+                </div>
+                <div class="game-box-4">
+
+                    <div class="game-box-COD">COD</div>
+
+                    <div class="game-box-detail slide-4-friend">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game xxx">xxx</div>
+                    <div class="game-box-score"> $ 200</div>
+                    <div class="game-box-winner">
+                        success
+                    </div>
+                    <div class="game-box-date">24/07/2021</div>
+                </div>
+                <div class="game-box-4">
+
+                    <div class="game-box-COD">COD</div>
+
+                    <div class="game-box-detail slide-4-friend">FRIENDLY TOURNAMENT</div>
+
+                    <div class="game-box-game">xxx</div>
+                    <div class="game-box-score"> $ 200</div>
+                    <div class="game-box-winner">
+                        success
+                    </div>
+                    <div class="game-box-date">24/07/2021</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Notifications" class="tabcontent container">
+            <div class="Notifications-slide">
+              <div class="notification-img">
+                <img src="img/notification 1.png">
+              </div>
+              <div class="notification-content">
+                You have no notifications
+              </div>
+            </div>
+          </div>
+
+
+        <div class="mid2">
+            <div class="multiple-game">
+                <div class="row multiple-game-row">
+                    <div class="multiple-game-col col-md-2 ">
+                        <img src="img/Rectangle 16.png" height="200" width="200">
+                    </div>
+                    <div class="multiple-game-col col-md-2">
+                        <img src="img/Rectangle 17.png" height="200" width="200">
+                    </div>
+                    <div class="multiple-game-col col-md-2">
+                        <img src="img/Rectangle 18.png" height="200" width="200">
+                    </div>
+                    <div class="multiple-game-col col-md-2">
+                        <img src="img/Rectangle 19.png" height="200" width="200">
+                    </div>
+                    <div class="multiple-game-col col-md-2">
+                        <img src="img/Rectangle 20.png" height="200" width="200">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- <div>
+        <img src="img/esports.png">
+    </div> -->
+
+
+        </section>
+
+        <div>
+            <!-- Footer -->
+            <footer class="page-footer font-small stylish-color-light pt-4 footerbg ">
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 mr-auto">
+
+                            <!-- Content -->
+                            <div class="font-weight-bold text-justify text-uppercase mt-3 mb-4 col-8 foothead">Esports
+                                league</div>
+                            <div class="col-10 text-justify text-start">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, do eiusmod tempor
+                                incididunt ut labore et dolore magnaaliqua..</div>
+
+                        </div>
+                        <!-- Grid column -->
+
+
+                        <div class="col-md-8 footright ">
+                            <div class="row">
+                                <div class="col-md-10 ms-auto">
+                                    <div class="row">
+                                        <div class="col-md-2 mx-auto line">
+
+                                            <h5 class="text-uppercase footnav">HOME</h5>
+                                            <!-- <div>|</div> -->
+
+                                        </div>
+
+
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 mx-auto">
+                                            <!-- Links -->
+                                            <h5 class=" text-uppercase footnav">TOURNAMENT</h5>
+
+                                        </div>
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-2 mx-auto">
+                                            <!-- Links -->
+                                            <h5 class="font-weight-bold text-uppercase footnav">TEAM</h5>
+
+                                        </div>
+
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-2 mx-auto">
+                                            <!-- Links -->
+                                            <h5 class="font-weight-bold text-uppercase footnav">PLAYERS</h5>
+
+                                        </div>
+
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-2 mx-auto">
+                                            <!-- Links -->
+                                            <h5 class="font-weight-bold text-uppercase footnav">STREAM</h5>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-11 mt-5  ms-auto">
+                                    <div class="row">
+                                        <div class="col-md-4 pl-5"> Follow Us</div>
+                                        <div class="col-md-1">
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-fb mx-1">
+                                                    <img src="./img/Vector.png">
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <div class="col-md-1">
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-tw mx-1">
+                                                    <img src="./img/akar-icons_instagram-fill.png">
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <div class="col-md-1">
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-tw mx-1">
+                                                    <img src="./img/akar-icons_twitter-fill.png">
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <div class="col-md-1">
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-gplus mx-1">
+                                                    <img src="./img/bx_bxl-youtube.png">
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <div class="col-md-1">
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-li mx-1">
+                                                    <img src="./img/logos_discord-icon.png">
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <div class="col-md-1">
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-dribbble mx-1">
+                                                    <img src="./img/logos_twitch.png">
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <!-- Footer Links -->
+
+
+
+                    <!-- Copyright -->
+                    <div class="footer-copyright  py-3 copy text-start">© 2020 Copyright:
+                        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+                    </div>
+                    <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+        </div>
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
