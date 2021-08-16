@@ -383,10 +383,29 @@
  margin-left: 5vw;
 }
 
+.Share-slide-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Share-slide-1-img{
+    height: 10vh;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Share-slide-1-value{
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Notifications-slide{
     width: 100%;
-    
-
 }
 .notification-img{
     margin-top: 15%;
@@ -473,6 +492,10 @@
     .Plyde{
         padding-top: 0vh;
         padding-left: 0vw;
+    }
+
+    .Share-slide-1{
+        display: none;
     }
     
 }
